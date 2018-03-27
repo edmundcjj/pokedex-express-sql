@@ -8,10 +8,10 @@
   <h4>Editing: {{pokemon.name}}</h4>
   <form class="pokemon-form" method="POST" action="/{{pokemon.id}}?_method=PUT">
     <div class="pokemon-attribute">
-      id:<input name="id" type="text" value="{{pokemon.id}}"/>
+      id:<input name="id" type="text" value="{{pokemon.id}}" readonly/>
     </div>
     <div class="pokemon-attribute">
-      num:<input name="num" type="text" value="{{pokemon.num}}"/>
+      num:<input name="num" type="text" value="{{pokemon.num}}" readonly/>
     </div>
     <div class="pokemon-attribute">
       name:<input name="name" type="text" value="{{pokemon.name}}"/>
@@ -25,6 +25,7 @@
     <div class="pokemon-attribute">
       weight:<input name="weight" type="text" value="{{pokemon.weight}}"/>
     </div>
+    <br>
     <input name="submit" type="submit"/>
   </form>
 </body>
